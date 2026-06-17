@@ -1,6 +1,9 @@
 # RSS Ain't Dead
 
 A dead simple self-hosted RSS reader because I didn't like the other options
+
+![Preview](preview.png)
+
 What to expect:
 - No features
 - Abandonware in a day or two
