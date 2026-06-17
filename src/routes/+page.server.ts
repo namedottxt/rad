@@ -20,6 +20,7 @@ export const load: PageServerLoad = async () => {
 			item: [
 				// ["enclosure", "media"],
 				['media:content', 'media'],
+				['media:thumbnail', 'media'],
 				['dc:creator', 'author']
 			]
 		}
