@@ -11,13 +11,13 @@ What to expect:
 
 Have a compose:
 ```yml
-  rad:
-    image: rad:latest
-    container_name: rad
-    build: .
-    volumes:
-      - ./feeds.txt:/app/feeds.txt
-    ports:
-      - 55300:5000
-    restart: unless-stopped
+rad:
+  image: rad:latest
+  container_name: rad
+  build: .
+  volumes:
+    - ./feeds.txt:/app/feeds.txt
+  ports:
+    - 55300:5000
+  restart: unless-stopped
 ```
