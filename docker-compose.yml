@@ -1,0 +1,10 @@
+services:
+  rad:
+    image: rad:latest
+    container_name: rad
+    build: .
+    volumes:
+      - ./feeds.txt:/app/feeds.txt
+    ports:
+      - 55300:5000
+    restart: unless-stopped

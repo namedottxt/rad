@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
+
+<style>
+	:root {
+		--accent: rebeccapurple;
+		--text: lavender;
+		/* --text :#20c20e; */
+	}
+
+	* {
+		scrollbar-color: var(--accent) transparent;
+		font-family: monospace;
+		box-sizing: border-box;
+		color: var(--text);
+		text-shadow:
+			-0.8px 0 #ff000090,
+			0.8px 0 #00f7ff90;
+	}
+
+	body {
+		background-color: black;
+		margin: 0;
+	}
+
+	hr {
+		border: 1px solid var(--accent);
+		width: 100%;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a, 
+	button {
+		transition: .3s;
+	}
+
+	a:hover, 
+	button:hover {
+		filter: brightness(80%);
+		cursor: pointer;
+	}
+
+	.hover {
+		transition: .3s;
+	}
+
+	.hover:hover {
+		filter: brightness(80%);
+		cursor: pointer;
+	}
+
+	.blank-btn {
+		background: transparent;
+		outline: 0;
+		border: 0;
+	}
+</style>
